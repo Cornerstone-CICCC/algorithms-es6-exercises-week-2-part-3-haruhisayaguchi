@@ -4,7 +4,9 @@
 // Test your function with different numbers of arguments.
 
 function subtract(...numbers) {
-  // Your code here
+  if (numbers.length === 0) return 0;
+  return numbers.reduce((acc, curr) => acc - curr);
 }
 
 console.log(subtract(10, 2, 3)); // Example usage
+console.log(subtract(54, 22, 16)); 
